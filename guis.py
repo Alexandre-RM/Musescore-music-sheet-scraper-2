@@ -85,8 +85,8 @@ class UiSelectMusicUrl():
             self.window.mainloop()
         else:
             self.url = "https://musescore.com/mmc418-2/scores/2454041"
-
-        self.window.destroy()
+            self.window.destroy()
+            
         return self.url
     
     def destroy(self):
