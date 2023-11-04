@@ -4,7 +4,7 @@ Pillow==10.1.0
 pypdf==3.17.0
 reportlab==4.0.6
 Requests==2.31.0
-selenium==4.15.1
+selenium==4.15.2
 svglib==1.5.1
 validators==0.22.0
 webdriver_manager==4.0.1

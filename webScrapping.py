@@ -24,7 +24,7 @@ from pypdf import PdfWriter
 from guis import UiProgressBar, UiSelectMusicUrl
 
 def executeScrapping(debug:bool):
-    url = UiSelectMusicUrl("Saisie URL Musescore").show(debug=debug)
+    url = UiSelectMusicUrl("Saisie URL Musescore").show(debug)
 
     if url == "":
         exit()
@@ -75,7 +75,7 @@ def executeScrapping(debug:bool):
 
         
 
-        driver.execute_script("arguments[0].scrollTo({top:arguments[0].scrollTop + 600, left:0, behavior: \"smooth\"});", sheetsWrapper)
+        driver.execute_script("arguments[0].scrollTo({top:arguments[0].scrollTop + 300, left:0, behavior: \"smooth\"});", sheetsWrapper)
         time.sleep(0.5)
 
         progressBar.updateProgress(len(musicSheetLinks) / len(musicSheetTags))

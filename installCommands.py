@@ -4,9 +4,11 @@ import subprocess
 commandInstallRequirements = "pip install pipreqs pyinstaller"
 commandPipReqs = "pipreqs . --force"
 commandInstaller = "pyinstaller \
+    --clean \
     --noconsole \
     --onefile \
     --name Musescore_Music_Sheets_Scrapper \
+    --icon icon.ico \
     main.py"
 
 # Utilisez subprocess pour exécuter la commande
